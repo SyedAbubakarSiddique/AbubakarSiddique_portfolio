@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "jetro": {
+      "type": "stdio",
+      "command": "C:\\Users\\shanan Fathima\\.jetro\\runtime\\node-win32-x64.exe",
+      "args": [
+        "C:\\Users\\shanan Fathima\\.jetro\\mcp-server\\index.js"
+      ],
+      "env": {
+        "JET_WORKSPACE": "c:\\Users\\shanan Fathima\\Downloads\\ABUBAKAR\\Portfolio-Website-main(new)",
+        "JET_API_URL": "https://api.jetro.ai",
+        "PATH": "C:\\Users\\shanan Fathima\\.jetro\\runtime;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\System32;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Users\\shanan Fathima\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\shanan Fathima\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\shanan Fathima\\AppData\\Local\\Programs\\Ollama;C:\\Users\\shanan Fathima\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\shanan Fathima\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\shanan Fathima\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\shanan Fathima\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\shanan Fathima\\AppData\\Roaming\\npm;C:\\Users\\shanan Fathima\\AppData\\Local\\Programs\\Antigravity\\bin;C:\\Users\\shanan Fathima\\AppData\\Local\\Programs\\Antigravity IDE new\\bin;C:\\Users\\shanan Fathima\\AppData\\AndroidCLI;C:\\Users\\shanan Fathima\\AppData\\Local\\Programs\\Antigravity IDE\\bin;C:\\src\\flutter\\bin"
+      }
+    }
+  }
+}

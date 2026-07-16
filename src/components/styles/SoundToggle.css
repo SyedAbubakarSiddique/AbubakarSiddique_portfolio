@@ -1,0 +1,60 @@
+.fixed-sound-toggle {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 9999;
+  background: var(--glassBg);
+  border: 1px solid var(--glassBorder);
+  border-top: 1px solid var(--glassBorderTop);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accentColor);
+  cursor: pointer;
+  box-shadow: var(--glassShadow);
+  transition: all 0.3s ease;
+}
+
+.fixed-sound-toggle:hover {
+  background: rgba(0, 113, 227, 0.08);
+  border-color: var(--accentColor);
+  box-shadow: var(--glassShadow), 0 0 15px rgba(0, 113, 227, 0.2);
+  transform: translateY(-2px);
+}
+
+.fixed-sound-toggle.muted {
+  color: var(--textColorSecondary);
+  border-color: var(--glassBorder);
+  opacity: 0.7;
+}
+
+.sound-toggle-icon {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sound-toggle-text {
+  font-family: "Geist", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+  .fixed-sound-toggle {
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 15px;
+  }
+  .sound-toggle-icon {
+    font-size: 18px;
+  }
+  .sound-toggle-text {
+    font-size: 10px;
+  }
+}

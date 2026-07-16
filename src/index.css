@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+:root {
+  font-family: "Geist", sans-serif;
+
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  color-scheme: light;
+  color: #1d1d1f;
+  background-color: var(--backgroundColor);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  --accentColor: #0071e3;
+  --accentColor-rgb: 0, 113, 227;
+  --backgroundColor: #f5f5f7;
+  --textColor: #1d1d1f;
+  --textColorSecondary: #6e6e73;
+  --glassBg: rgba(255, 255, 255, 0.45);
+  --glassBorder: rgba(255, 255, 255, 0.6);
+  --glassBorderTop: rgba(255, 255, 255, 0.85);
+  --glassShadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+  --vh: 100vh;
+  --vh: 100svh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geist", sans-serif;
+  color: var(--textColor);
+}
+body {
+  overflow: hidden;
+  background-color: var(--backgroundColor);
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accentColor);
+}
+main {
+  opacity: 1;
+  transition: 0.3s;
+}
+.main-active {
+  opacity: 0;
+  animation: fadeIn 1s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  height: auto;
+  flex-grow: 1;
+  --cWidth: calc(100% - 30px);
+  --cMaxWidth: 1920px;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.main-body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.container-main {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.container1 {
+  width: var(--cWidth);
+  height: var(--vh);
+  margin: auto;
+  position: relative;
+}
+.split-line {
+  overflow: hidden;
+}
+.split-h2 {
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.techstack {
+  width: 100%;
+  position: relative;
+  height: var(--vh);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.techstack h2 {
+  font-size: 80px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 120px;
+  left: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    --cWidth: 94%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .techstack h2 {
+    font-size: 40px;
+  }
+}
+
+/* Global Glass Panel (Liquid Glass Effect) */
+.glass-panel {
+  background: var(--glassBg);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid var(--glassBorder);
+  border-top: 1px solid var(--glassBorderTop);
+  box-shadow: var(--glassShadow);
+  border-radius: 24px;
+}
+
+/* Liquid Background Orbs - Hardware Accelerated & Optimized */
+.liquid-bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--backgroundColor);
+}
+
+.liquid-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  animation: floatOrb 30s infinite ease-in-out alternate;
+}
+
+.orb1 {
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(135deg, rgba(251, 141, 255, 0.4) 0%, rgba(134, 37, 233, 0.2) 100%);
+  top: -15%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.orb2 {
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(135deg, rgba(84, 180, 255, 0.4) 0%, rgba(0, 113, 227, 0.1) 100%);
+  bottom: -15%;
+  right: -10%;
+  animation-delay: -5s;
+}
+
+.orb3 {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, rgba(255, 220, 150, 0.3) 0%, rgba(251, 141, 255, 0.1) 100%);
+  top: 25%;
+  left: 15%;
+  animation-delay: -10s;
+  opacity: 0.4;
+}
+
+@keyframes floatOrb {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(10vw, 8vh, 0) scale(1.15); }
+  66% { transform: translate3d(-5vw, 15vh, 0) scale(0.9); }
+  100% { transform: translate3d(-10vw, -5vh, 0) scale(1.1); }
+}
